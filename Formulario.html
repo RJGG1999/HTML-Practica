@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Estilos.css" media="screen" />
+        <title>Formulario</title>
+    </header>
+    <body>
+        <div class="nav">
+            <a href="Index.html">Index</a>
+            <a href="Formulario.html">Formulario</a>
+        </div>
+        <h1 class="center"> Contacto</h1>
+        <form method="get">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Nombre" required><br><br>
+            <label for="correo">Correo: </label>
+            <input type="email" name="correo" placeholder="Correo" required><br><br>
+            <label for="genero">Género: </label>
+            <input type="radio" name="genero" value="Hombre" checked>Hombre
+            <input type="radio" name="genero" value="Mujer">Mujer<br><br>
+            <label for="contrasena">Contraseña: </label>
+            <input type="password" name="contrasena" placeholder="Constraseña" required><br><br>
+            <label for="comentario">Comentario(s): </label>
+            <input type="textarea" name="comentario" placeholder="Comentario(s)"><br><br>
+			<label for="ciudad">Ciudad: </label>
+            <select name="ciudad">
+				<option value="GLD">Guadalajara</option>
+				<option value="Zapopan">Zapopan</option>
+				<option value="Tonalá">Tonalá</option>
+				<option value="Otra">Otra</option>
+			</select><br><br>
+            <label for="contacto">Me interesa contactarte: </label>
+            <input type="checkbox" name="contacto" checked><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
